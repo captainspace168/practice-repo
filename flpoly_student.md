@@ -1,12 +1,12 @@
-## andres jimenez
+## Andres jimenez
 
 ### 2021 
 
 DSBA student at [Florida Polytechnic University](https://www.floridapoly.edu) currently enrolled in: 
 
-- pre-cal
+- **pre-cal**
 
-- intro to data science 
+- _intro to data science_ 
 
 - Course 3
 
