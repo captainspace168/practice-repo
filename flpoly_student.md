@@ -1,12 +1,12 @@
-## First Name Last Name
+## andres jimenez
 
-### Term Year 
+### 2021 
 
 DSBA student at [Florida Polytechnic University](https://www.floridapoly.edu) currently enrolled in: 
 
-- Course 1
+- pre-cal
 
-- Course 2
+- intro to data science 
 
 - Course 3
 
@@ -16,12 +16,12 @@ DSBA student at [Florida Polytechnic University](https://www.floridapoly.edu) cu
 
 I am _passionate about_: 
 
-- Thing 1
+- coding
 
-- Thing 2
+- netflix 
 
-- Thing 3 as shown in this website <https://www.floridapoly.edu>
+- robotics<https://www.floridapoly.edu>
 
 ***
 
-> Last modified: YYYY/MM/DD
+> Last modified: 2021/12/7
