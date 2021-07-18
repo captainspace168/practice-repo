@@ -2,15 +2,12 @@
 
 ### 2021 
 
-DSBA student at [Florida Polytechnic University](https://www.floridapoly.edu) currently enrolled in: 
+DSBA student at [Florida Polytechnic University](https://www.floridapoly.edu) currently enrolled in:
 
-- **pre-cal**
-
-- _intro to data science_ 
-
-- Course 3
-
-- Course 4
+|**class name**             |**class number**  |
+|:--|:----------------------|------------------|
+|- _pre-cal_                |#unknown          |
+|- _intro to data science_  |**COP 2073**      |
 
 **Hobbies:**
 
