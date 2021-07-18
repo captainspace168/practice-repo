@@ -23,7 +23,7 @@ b. Include a link to your GitHub repo in this document.
 [this is the link to the repo](https://github.com/captainspace168/practice-repo.git)
 
 c. Take a screenshot of the GitHub repo, add the screenshot file to the repo, and include it in this document (review how to insert a picture using markdown)
-![this is a screenshot of the repo](https://github.com/captainspace168/practice-repo/blob/de4fd44ac962644ff34afb9f3132241be5c42317/2021-07-18%20(2).png)
+![this is a screenshot of the repo](2021-07-18 (2).png)
 
 # Problem 2 (30 points)
 
