@@ -8,7 +8,7 @@ DSBA student at [Florida Polytechnic University](https://www.floridapoly.edu) cu
 |:--|:----------------------|------------------|
 |- _pre-cal_                |#unknown          |
 |- _intro to data science_  |**COP 2073**      |
-
+***
 **Hobbies:**
 
 I am _passionate about_: 
