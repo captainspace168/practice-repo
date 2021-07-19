@@ -123,18 +123,21 @@ _Hint_: compare the length difference to the length of the smaller string
 
 ```{r}
 is_twice_as_long <- function(length1, length2){
-  if(nchar(length1) == 2*nchar(length2)|nchar(length1) >= nchar(length2)){
+  length1<-nchar(length1)
+  length2<-nchar(length2)
+  print(length1)
+  print(length2)
+  if(length1 == 2*length2|length1 >length2){
    boolean<- isTRUE(TRUE)
     paste('length1 is twice as long or greather than  length2:',boolean)
-  }else if(nchar(length2) == 2*nchar(length1)|nchar(length2) >= nchar(length1)){
+  }else if(length2 == 2*length1|length2 > length1){
     boolean<- isTRUE(TRUE)
     paste('length2 is twice as long or greather than  length1:', boolean)
   }else{
     boolean<- isTRUE(TRUE)
-   paste('neither is twice as long as the other:',boolean) 
+   paste('both are equal :',boolean) 
   }
 }
-
 
 ```
 
@@ -144,6 +147,7 @@ as long, as well as when neither are!
 ```{r}
 is_twice_as_long('hello','hi')
 is_twice_as_long('hi','good afternoon')
+is_twice_as_long('hi','hi')
 
 
 
