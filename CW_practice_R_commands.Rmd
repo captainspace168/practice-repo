@@ -1,0 +1,195 @@
+---
+title: "Basic Operations in R"
+output: html_notebook
+---
+
+_Problems adapted from the PSDS textbook_
+
+## Calling built-in functions
+
+Create a variable `my_name` that contains your name
+
+```{r}
+my_name <- 'andres jimenez'
+my_name 
+
+```
+
+
+Create a variable `name_length` that holds how many letters (including spaces) are in your name (use the `nchar()` function)
+
+```{r}
+name_length <- nchar(my_name)
+```
+
+
+
+Print the number of letters in your name
+
+```{r}
+name_length
+
+```
+
+Create a variable `now_doing` that is your name followed by "is programming!" (use the `paste()` function)
+
+```{r}
+now_doing <- paste(my_name, 'is programming!')
+now_doing
+```
+
+Make the `now_doing` variable upper case
+
+```{r}
+toupper(now_doing)
+
+```
+
+
+## Operations with Numbers
+
+Pick two of your favorite numbers (between 1 and 100) and assign them to variables `fav_1` and `fav_2`
+
+```{r}
+fav1 <- 10
+fav2 <- 20
+
+
+```
+
+
+Divide each number by the square root of 201 and save the new value in the original variable
+
+```{r}
+fav1<- fav1/sqrt(201)
+
+fav2 <- fav2/sqrt(201)
+
+
+```
+
+
+Create a variable `raw_sum` that is the sum of the two variables. Use the `sum()` function for practice.
+
+```{r}
+raw_sum <- sum(fav1,fav2)
+raw_sum
+```
+
+
+Create a variable `round_sum` that is the `raw_sum` rounded to 1 decimal place. Use the `round()` function.
+
+```{r}
+round_sum <- round(raw_sum)
+round_sum
+
+```
+
+
+Create two new variables `round_1` and `round_2` that are your `fav_1` and `fav_2` variables rounded to 1 decimal places
+
+```{r}
+round1 <- round(fav1)
+round2 <- round(fav2)
+```
+
+Create a variable `sum_round` that is the sum of the rounded values
+
+```{r}
+sum_round <- sum(round1+round2)
+sum_round
+```
+
+
+Which is bigger, `round_sum` or `sum_round`? (You can use the `max()` function!)
+
+```{r}
+max(sum_round, round_sum)
+if(sum_round == round_sum){
+  print('sum_round and round_sum are equal')
+}else if(sum_round > round_sum){
+  print('sum_round is larger')
+}else{
+  print('round_sum is larger')
+}
+```
+
+
+## Functions and Conditionals
+
+Define a function `is_twice_as_long` that takes in two character strings, and returns whether or not (e.g., a boolean) the length of one argument is greater than or equal to twice the length of the other.
+_Hint_: compare the length difference to the length of the smaller string
+
+
+```{r}
+is_twice_as_long <- function(length1, length2){
+  if(nchar(length1) == 2*nchar(length2)|nchar(length1) >= nchar(length2)){
+   boolean<- isTRUE(TRUE)
+    paste('length1 is twice as long or greather than  length2:',boolean)
+  }else if(nchar(length2) == 2*nchar(length1)|nchar(length2) >= nchar(length1)){
+    boolean<- isTRUE(TRUE)
+    paste('length2 is twice as long or greather than  length1:', boolean)
+  }else{
+    boolean<- isTRUE(TRUE)
+   paste('neither is twice as long as the other:',boolean) 
+  }
+}
+
+
+```
+
+Call your `is_twice_as_long` function by passing it different length strings to confirm that it works. Make sure to check when _either_ argument is twice
+as long, as well as when neither are!
+
+```{r}
+is_twice_as_long('hello','hi')
+is_twice_as_long('hi','good afternoon')
+
+
+
+
+
+
+```
+
+Define a function `describe_difference` that takes in two strings. The function should return one of the following sentences as appropriate 
+
+- "Your first string is longer by N characters"
+
+- "Your second string is longer by N characters"
+
+- "Your strings are the same length!"
+
+```{r}
+describe_difference <- function(st1, st2){
+  st1<-nchar(st1)
+  st2<-nchar(st2)
+  total1<- st1 -st2 
+  total2<- st2 - st1 
+  if(st1 > st2 ){
+    paste('your first string is longer by', total1 )
+
+  }else if(st2>st1){
+    paste('your second string is longer by', total2)
+  }else if(st1==st2){
+  print ('both string are the same length')
+    
+  }else{
+    print('something is wrong check your input')
+  }
+}
+
+
+```
+
+
+
+Call your `describe_difference` function by passing it different length strings to confirm that it works. Make sure to check all 3 conditions
+
+```{r}
+describe_difference('hello ','how are you')
+describe_difference('how is your day going','how have you been ')
+describe_difference('hi','hi')
+```
+
+
